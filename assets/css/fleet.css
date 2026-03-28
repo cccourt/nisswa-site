@@ -1,0 +1,378 @@
+/* =========================================================
+   FLEET LANDING PAGE — fleet.html
+========================================================= */
+
+body.page-fleet {
+  background: var(--black);
+}
+
+/* ── PAGE WRAPPER ───────────────────────────────────────── */
+#nbjs-fleet-page {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 110px 28px 80px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(60, 90, 140, 0.08), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.03), transparent 30%),
+    radial-gradient(circle at 60% 80%, rgba(30, 60, 100, 0.06), transparent 35%),
+    var(--black);
+}
+
+/* Drift animation overlay */
+#nbjs-fleet-page::before {
+  content: "";
+  position: absolute;
+  inset: -20%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.015) 50%, transparent 100%);
+  transform: translateX(-18%);
+  animation: fleetDrift 16s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid texture overlay */
+#nbjs-fleet-page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(244, 241, 236, 0.016) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 236, 0.016) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes fleetDrift {
+  0%   { transform: translateX(-18%); }
+  50%  { transform: translateX(10%); }
+  100% { transform: translateX(-18%); }
+}
+
+/* All children above the overlays */
+#nbjs-fleet-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── SHELL ──────────────────────────────────────────────── */
+.fleet-shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── HERO ───────────────────────────────────────────────── */
+.fleet-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 28px 0 36px;
+  border-bottom: 1px solid var(--border);
+}
+
+.fleet-hero-left {
+  max-width: 760px;
+}
+
+.fleet-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.42);
+  margin-bottom: 18px;
+}
+
+.fleet-title {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(4rem, 12vw, 8.6rem);
+  line-height: 0.88;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.fleet-title em {
+  display: block;
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  color: rgba(244, 241, 236, 0.28);
+  letter-spacing: 0;
+}
+
+.fleet-hero-right {
+  min-width: 160px;
+  text-align: right;
+}
+
+.fleet-meta-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.42);
+  margin-bottom: 14px;
+}
+
+.fleet-meta-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(244, 241, 236, 0.18);
+  letter-spacing: 0.08em;
+}
+
+/* ── FILTER TABS ────────────────────────────────────────── */
+.fleet-tabs {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid var(--border);
+  margin-top: 22px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.fleet-tab {
+  appearance: none;
+  background: none;
+  border: none;
+  color: rgba(244, 241, 236, 0.35);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 18px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.fleet-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: var(--white);
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+.fleet-tab.active {
+  color: var(--white);
+}
+
+.fleet-tab.active::after {
+  transform: scaleX(1);
+}
+
+/* ── FLEET GRID ─────────────────────────────────────────── */
+.fleet-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+/* ── FLEET CARD ─────────────────────────────────────────── */
+.fleet-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: var(--black);
+  overflow: hidden;
+  transition: background 0.25s;
+}
+
+.fleet-card.hidden {
+  display: none;
+}
+
+/* B&W → color SVG transition */
+.fleet-card-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0b0b0b;
+}
+
+.fleet-card-visual svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.55s cubic-bezier(.16, 1, .3, 1);
+}
+
+.svg-bw  { opacity: 1; }
+.svg-color { opacity: 0; }
+
+.fleet-card:hover .svg-bw    { opacity: 0; }
+.fleet-card:hover .svg-color { opacity: 1; }
+
+/* Grid overlay on illustration */
+.fleet-card-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(244, 241, 236, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 236, 0.02) 1px, transparent 1px);
+  background-size: 28px 28px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fleet-tag {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  z-index: 3;
+  border: 1px solid rgba(244, 241, 236, 0.14);
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: rgba(8, 8, 8, 0.6);
+  color: rgba(244, 241, 236, 0.58);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.fleet-card:hover .fleet-tag {
+  color: var(--white);
+  border-color: rgba(244, 241, 236, 0.35);
+}
+
+/* ── CARD BODY ──────────────────────────────────────────── */
+.fleet-card-body {
+  padding: 22px 22px 24px;
+  border-top: 1px solid var(--border);
+  transition: background 0.25s ease;
+}
+
+.fleet-card:hover .fleet-card-body {
+  background: #0d0d0d;
+}
+
+.fleet-card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.fleet-card-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  line-height: 0.95;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fleet-card-price {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.fleet-price-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.42);
+  margin-bottom: 4px;
+}
+
+.fleet-price-value {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.fleet-price-unit {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.42);
+  margin-top: 2px;
+}
+
+.fleet-card-copy {
+  color: rgba(244, 241, 236, 0.62);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.fleet-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.fleet-chip {
+  border: 1px solid rgba(244, 241, 236, 0.1);
+  border-radius: 999px;
+  padding: 5px 10px;
+  color: rgba(244, 241, 236, 0.46);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.fleet-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* ── FLEET MOBILE ───────────────────────────────────────── */
+@media (max-width: 900px) {
+  #nbjs-fleet-page {
+    padding: 96px 16px 56px;
+  }
+
+  .fleet-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .fleet-hero-right {
+    text-align: left;
+  }
+
+  .fleet-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .fleet-title {
+    font-size: clamp(3.5rem, 18vw, 5rem);
+  }
+}
