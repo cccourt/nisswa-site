@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet | Nisswa Boat & Jet Ski Rentals</title>
+  <meta name="description" content="Browse our full fleet of pontoons, tritoons, jet skis, and fishing boats. Delivered to your lake in the Brainerd Lakes Area.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Syne:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/fleet.css">
+</head>
+<body class="page-fleet">
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- SHARED HEADER -->
+  <header id="hdr" class="scrolled">
+    <div class="header-left">
+      <a href="index.html#checker" class="nav-link">Check Your Lake</a>
+      <a href="fleet.html" class="nav-link nav-link--active">Fleet</a>
+      <a href="index.html#how" class="nav-link">How It Works</a>
+    </div>
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="Nisswa Boat & Jet Ski">
+      </a>
+    </div>
+    <div class="header-right">
+      <a href="index.html#checker" class="book-btn">Book Now</a>
+    </div>
+  </header>
+
+  <!-- FLEET PAGE -->
+  <div id="nbjs-fleet-page">
+    <div class="fleet-shell">
+
+      <!-- HERO -->
+      <section class="fleet-hero">
+        <div class="fleet-hero-left">
+          <div class="fleet-eyebrow">// Our Fleet</div>
+          <h1 class="fleet-title">Pick Your <em>Ride.</em></h1>
+        </div>
+        <div class="fleet-hero-right">
+          <div class="fleet-meta-label">// Total Vessels</div>
+          <div class="fleet-meta-value">04</div>
+        </div>
+      </section>
+
+      <!-- FILTER TABS -->
+      <div class="fleet-tabs">
+        <button class="fleet-tab active" data-filter="all">All Rentals</button>
+        <button class="fleet-tab" data-filter="pontoon">Pontoons &amp; Tritoons</button>
+        <button class="fleet-tab" data-filter="jetski">Jet Skis</button>
+        <button class="fleet-tab" data-filter="fishing">Fishing Boats</button>
+        <button class="fleet-tab" data-filter="accessory">Accessories</button>
+      </div>
+
+      <!-- GRID -->
+      <section class="fleet-grid">
+
+        <!-- PONTOON -->
+        <a href="fleet.html#pontoons" class="fleet-card" data-category="pontoon">
+          <div class="fleet-card-visual">
+            <svg class="svg-bw" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#090909"/>
+              <path d="M90 260 Q280 278 470 260" fill="none" stroke="rgba(244,241,236,.22)" stroke-width="1" stroke-dasharray="5 4"/>
+              <rect x="150" y="180" width="260" height="44" rx="2" fill="rgba(244,241,236,.04)" stroke="rgba(244,241,236,.34)" stroke-width="1.1"/>
+              <path d="M120 225 Q280 215 440 225 L426 258 Q280 270 134 258 Z" fill="none" stroke="rgba(244,241,236,.82)" stroke-width="1.5"/>
+              <line x1="180" y1="180" x2="180" y2="118" stroke="rgba(244,241,236,.42)" stroke-width="1"/>
+              <line x1="380" y1="180" x2="380" y2="118" stroke="rgba(244,241,236,.42)" stroke-width="1"/>
+              <path d="M162 118 Q280 106 398 118" fill="none" stroke="rgba(244,241,236,.62)" stroke-width="1.4"/>
+              <rect x="180" y="162" width="36" height="18" rx="3" fill="rgba(244,241,236,.06)" stroke="rgba(244,241,236,.24)" stroke-width="1"/>
+              <rect x="224" y="162" width="36" height="18" rx="3" fill="rgba(244,241,236,.06)" stroke="rgba(244,241,236,.24)" stroke-width="1"/>
+              <rect x="300" y="162" width="36" height="18" rx="3" fill="rgba(244,241,236,.06)" stroke="rgba(244,241,236,.24)" stroke-width="1"/>
+              <rect x="344" y="162" width="36" height="18" rx="3" fill="rgba(244,241,236,.06)" stroke="rgba(244,241,236,.24)" stroke-width="1"/>
+              <rect x="262" y="152" width="36" height="28" rx="3" fill="rgba(244,241,236,.05)" stroke="rgba(244,241,236,.28)" stroke-width="1"/>
+            </svg>
+            <svg class="svg-color" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#101826"/>
+              <path d="M90 260 Q280 278 470 260" fill="none" stroke="rgba(90,150,220,.24)" stroke-width="1" stroke-dasharray="5 4"/>
+              <rect x="150" y="180" width="260" height="44" rx="2" fill="#d8d4cc" stroke="#bdb8b0" stroke-width="1.1"/>
+              <path d="M120 225 Q280 215 440 225 L426 258 Q280 270 134 258 Z" fill="#ebe6de" stroke="#d1cbc2" stroke-width="1.4"/>
+              <line x1="180" y1="180" x2="180" y2="118" stroke="#8f8f8f" stroke-width="1"/>
+              <line x1="380" y1="180" x2="380" y2="118" stroke="#8f8f8f" stroke-width="1"/>
+              <path d="M162 118 Q280 106 398 118" fill="#1d3656" stroke="#29476d" stroke-width="1.4"/>
+              <rect x="180" y="162" width="36" height="18" rx="3" fill="#1e3654" stroke="#304f72" stroke-width="1"/>
+              <rect x="224" y="162" width="36" height="18" rx="3" fill="#1e3654" stroke="#304f72" stroke-width="1"/>
+              <rect x="300" y="162" width="36" height="18" rx="3" fill="#1e3654" stroke="#304f72" stroke-width="1"/>
+              <rect x="344" y="162" width="36" height="18" rx="3" fill="#1e3654" stroke="#304f72" stroke-width="1"/>
+              <rect x="262" y="152" width="36" height="28" rx="3" fill="#161616" stroke="#2b2b2b" stroke-width="1"/>
+            </svg>
+            <div class="fleet-tag">Pontoon</div>
+          </div>
+          <div class="fleet-card-body">
+            <div class="fleet-card-top">
+              <div class="fleet-card-name">Pontoons</div>
+              <div class="fleet-card-price">
+                <div class="fleet-price-label">From</div>
+                <div class="fleet-price-value">$299</div>
+                <div class="fleet-price-unit">/ half day</div>
+              </div>
+            </div>
+            <div class="fleet-card-copy">Relaxed, social, premium lake cruising with delivery directly to your public access.</div>
+            <div class="fleet-chips">
+              <span class="fleet-chip">Cruising</span>
+              <span class="fleet-chip">Groups</span>
+              <span class="fleet-chip">Easy Ride</span>
+            </div>
+            <div class="fleet-card-cta">Explore Collection →</div>
+          </div>
+        </a>
+
+        <!-- JET SKIS -->
+        <a href="jet-skis.html" class="fleet-card" data-category="jetski">
+          <div class="fleet-card-visual">
+            <svg class="svg-bw" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#090909"/>
+              <line x1="0" y1="292" x2="560" y2="292" stroke="rgba(244,241,236,.05)" stroke-width="1"/>
+              <path d="M92 248 Q158 232 282 228 Q396 224 456 240 L490 257 Q382 268 282 271 Q154 274 86 262 Z" fill="none" stroke="rgba(244,241,236,.82)" stroke-width="1.5"/>
+              <path d="M186 228 Q282 212 388 222 Q414 224 426 235 L402 240 Q314 231 232 235 Z" fill="rgba(244,241,236,.06)" stroke="rgba(244,241,236,.48)" stroke-width="1.1"/>
+              <path d="M214 228 Q282 220 364 226 L362 235 Q282 228 216 235 Z" fill="rgba(244,241,236,.06)" stroke="rgba(244,241,236,.32)" stroke-width="1"/>
+              <path d="M252 225 Q282 208 310 225" fill="none" stroke="rgba(244,241,236,.56)" stroke-width="1.5"/>
+              <line x1="282" y1="208" x2="282" y2="222" stroke="rgba(244,241,236,.35)" stroke-width="1.1"/>
+              <path d="M88 264 Q52 272 24 286" stroke="rgba(244,241,236,.12)" stroke-width="1" fill="none"/>
+              <path d="M480 245 L524 240" stroke="rgba(244,241,236,.14)" stroke-width="1" stroke-dasharray="4 3"/>
+            </svg>
+            <svg class="svg-color" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#0f1c30"/>
+              <line x1="0" y1="292" x2="560" y2="292" stroke="rgba(80,140,220,.15)" stroke-width="1"/>
+              <path d="M92 248 Q158 232 282 228 Q396 224 456 240 L490 257 Q382 268 282 271 Q154 274 86 262 Z" fill="#ebe6de" stroke="#d1cbc2" stroke-width="1.4"/>
+              <path d="M94 258 Q282 269 488 258 L486 263 Q282 274 96 263 Z" fill="#c0392b"/>
+              <path d="M186 228 Q282 212 388 222 Q414 224 426 235 L402 240 Q314 231 232 235 Z" fill="#121212" stroke="#1e1e1e" stroke-width="1.1"/>
+              <path d="M214 228 Q282 220 364 226 L362 235 Q282 228 216 235 Z" fill="#090909" stroke="#161616" stroke-width="1"/>
+              <path d="M252 225 Q282 208 310 225" fill="none" stroke="#8f8f8f" stroke-width="1.9"/>
+              <line x1="282" y1="208" x2="282" y2="222" stroke="#7d7d7d" stroke-width="1.3"/>
+              <path d="M88 264 Q52 272 24 286" stroke="rgba(255,255,255,.38)" stroke-width="2" fill="none"/>
+              <path d="M480 245 L524 240" stroke="rgba(255,255,255,.16)" stroke-width="1" stroke-dasharray="4 3"/>
+            </svg>
+            <div class="fleet-tag">Jet Skis</div>
+          </div>
+          <div class="fleet-card-body">
+            <div class="fleet-card-top">
+              <div class="fleet-card-name">Jet Skis</div>
+              <div class="fleet-card-price">
+                <div class="fleet-price-label">From</div>
+                <div class="fleet-price-value">$329</div>
+                <div class="fleet-price-unit">/ day</div>
+              </div>
+            </div>
+            <div class="fleet-card-copy">Fast, stable Yamaha Waverunner VX rentals with Bluetooth stereo and direct delivery.</div>
+            <div class="fleet-chips">
+              <span class="fleet-chip">130hp</span>
+              <span class="fleet-chip">Stereo</span>
+              <span class="fleet-chip">Up to 3 Riders</span>
+            </div>
+            <div class="fleet-card-cta">View Jet Skis →</div>
+          </div>
+        </a>
+
+        <!-- FISHING -->
+        <a href="fleet.html#fishing" class="fleet-card" data-category="fishing">
+          <div class="fleet-card-visual">
+            <svg class="svg-bw" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#090909"/>
+              <path d="M110 250 Q180 240 282 238 Q380 236 448 246 L438 270 Q282 280 120 270 Z" fill="none" stroke="rgba(244,241,236,.76)" stroke-width="1.4"/>
+              <line x1="140" y1="247" x2="133" y2="175" stroke="rgba(244,241,236,.42)" stroke-width=".9"/>
+              <line x1="160" y1="246" x2="155" y2="170" stroke="rgba(244,241,236,.32)" stroke-width=".8"/>
+              <rect x="248" y="236" width="42" height="18" rx="2" fill="rgba(244,241,236,.05)" stroke="rgba(244,241,236,.28)" stroke-width="1"/>
+              <rect x="138" y="240" width="68" height="10" rx="1" fill="rgba(244,241,236,.05)" stroke="rgba(244,241,236,.22)" stroke-width=".8"/>
+              <rect x="330" y="240" width="70" height="10" rx="1" fill="rgba(244,241,236,.05)" stroke="rgba(244,241,236,.22)" stroke-width=".8"/>
+            </svg>
+            <svg class="svg-color" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#172317"/>
+              <path d="M110 250 Q180 240 282 238 Q380 236 448 246 L438 270 Q282 280 120 270 Z" fill="#b4b8b4" stroke="#9b9f9b" stroke-width="1.4"/>
+              <line x1="140" y1="247" x2="133" y2="175" stroke="#c7a46a" stroke-width=".9"/>
+              <line x1="160" y1="246" x2="155" y2="170" stroke="#b69258" stroke-width=".8"/>
+              <rect x="248" y="236" width="42" height="18" rx="2" fill="#171717" stroke="#2b2b2b" stroke-width="1"/>
+              <rect x="138" y="240" width="68" height="10" rx="1" fill="#2f4b2f" stroke="#416041" stroke-width=".8"/>
+              <rect x="330" y="240" width="70" height="10" rx="1" fill="#2f4b2f" stroke="#416041" stroke-width=".8"/>
+            </svg>
+            <div class="fleet-tag">Fishing</div>
+          </div>
+          <div class="fleet-card-body">
+            <div class="fleet-card-top">
+              <div class="fleet-card-name">Fishing Boats</div>
+              <div class="fleet-card-price">
+                <div class="fleet-price-label">From</div>
+                <div class="fleet-price-value">$199</div>
+                <div class="fleet-price-unit">/ half day</div>
+              </div>
+            </div>
+            <div class="fleet-card-copy">Practical aluminum setups for mornings on the lake, cast lines, and easy access fishing days.</div>
+            <div class="fleet-chips">
+              <span class="fleet-chip">Fishing</span>
+              <span class="fleet-chip">Lightweight</span>
+              <span class="fleet-chip">Lake Ready</span>
+            </div>
+            <div class="fleet-card-cta">Explore Fishing Boats →</div>
+          </div>
+        </a>
+
+        <!-- ACCESSORIES -->
+        <a href="#" class="fleet-card" data-category="accessory">
+          <div class="fleet-card-visual">
+            <svg class="svg-bw" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#090909"/>
+              <rect x="150" y="126" width="78" height="110" rx="12" fill="none" stroke="rgba(244,241,236,.48)" stroke-width="1.4"/>
+              <path d="M168 154 Q190 136 212 154" fill="none" stroke="rgba(244,241,236,.34)" stroke-width="1.1"/>
+              <rect x="260" y="150" width="134" height="56" rx="28" fill="none" stroke="rgba(244,241,236,.48)" stroke-width="1.4"/>
+              <circle cx="418" cy="178" r="26" fill="none" stroke="rgba(244,241,236,.3)" stroke-width="1"/>
+              <path d="M110 270 Q280 286 450 270" fill="none" stroke="rgba(244,241,236,.1)" stroke-width="1" stroke-dasharray="4 4"/>
+            </svg>
+            <svg class="svg-color" viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg">
+              <rect width="560" height="350" fill="#121c28"/>
+              <rect x="150" y="126" width="78" height="110" rx="12" fill="#e6e1d8" stroke="#cfc8be" stroke-width="1.4"/>
+              <path d="M168 154 Q190 136 212 154" fill="none" stroke="#7da2d6" stroke-width="1.1"/>
+              <rect x="260" y="150" width="134" height="56" rx="28" fill="#d4a13d" stroke="#c48f28" stroke-width="1.4"/>
+              <circle cx="418" cy="178" r="26" fill="#f0ede7" stroke="#d8d1c8" stroke-width="1"/>
+              <path d="M110 270 Q280 286 450 270" fill="none" stroke="rgba(100,170,240,.14)" stroke-width="1" stroke-dasharray="4 4"/>
+            </svg>
+            <div class="fleet-tag">Accessories</div>
+          </div>
+          <div class="fleet-card-body">
+            <div class="fleet-card-top">
+              <div class="fleet-card-name">Accessories</div>
+              <div class="fleet-card-price">
+                <div class="fleet-price-label">Add-ons</div>
+                <div class="fleet-price-value">Gear</div>
+                <div class="fleet-price-unit">&amp; extras</div>
+              </div>
+            </div>
+            <div class="fleet-card-copy">Add-ons, essentials, and lake-day extras to round out the experience.</div>
+            <div class="fleet-chips">
+              <span class="fleet-chip">Extras</span>
+              <span class="fleet-chip">Gear</span>
+              <span class="fleet-chip">Essentials</span>
+            </div>
+            <div class="fleet-card-cta">See Accessories →</div>
+          </div>
+        </a>
+
+      </section><!-- /.fleet-grid -->
+    </div><!-- /.fleet-shell -->
+  </div><!-- /#nbjs-fleet-page -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-logo">
+      <img src="assets/images/logo.png" alt="Nisswa Boat &amp; Jet Ski">
+      <span class="footer-name">Nisswa Boat &amp; Jet Ski</span>
+    </div>
+    <div class="footer-copy">© 2025 · Brainerd Lakes Area, MN</div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/fleet.js"></script>
+</body>
+</html>
