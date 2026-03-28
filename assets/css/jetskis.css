@@ -1,0 +1,586 @@
+/* =========================================================
+   JET SKIS PAGE — jet-skis.html
+========================================================= */
+
+body.page-jetskis {
+  background: var(--black);
+}
+
+#nbjs-jetski {
+  --border: rgba(244, 241, 236, 0.14);
+  background: var(--black);
+  color: var(--white);
+  padding: 100px 3rem 7rem;
+  font-family: 'Syne', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle background texture */
+#nbjs-jetski::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(244, 241, 236, 0.016) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 236, 0.016) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#nbjs-jetski > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── SECTION HEADER ─────────────────────────────────────── */
+.js-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  gap: 2rem;
+}
+
+.js-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.45);
+  margin-bottom: 0.75rem;
+}
+
+.js-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.88;
+  letter-spacing: 0.02em;
+}
+
+.js-title em {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  color: rgba(244, 241, 236, 0.38);
+}
+
+.js-head-note {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.35);
+  text-align: right;
+  line-height: 2;
+  max-width: 200px;
+}
+
+/* ── PRODUCT GRID ───────────────────────────────────────── */
+.js-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 4rem;
+}
+
+/* ── PRODUCT CARD ───────────────────────────────────────── */
+.js-card {
+  background: var(--black);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Illustration */
+.js-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0c0c0c;
+}
+
+.js-visual svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.svg-bw  { opacity: 1; }
+.svg-col { opacity: 0; }
+
+.js-card:hover .svg-bw  { opacity: 0; }
+.js-card:hover .svg-col { opacity: 1; }
+
+/* Grid overlay */
+.js-visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(244, 241, 236, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 236, 0.022) 1px, transparent 1px);
+  background-size: 28px 28px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.js-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.55);
+  border: 1px solid rgba(244, 241, 236, 0.14);
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: rgba(8, 8, 8, 0.65);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s;
+}
+
+.js-card:hover .js-tag {
+  color: var(--white);
+  border-color: rgba(244, 241, 236, 0.35);
+}
+
+/* Card body */
+.js-body {
+  padding: 2rem 2rem 2.25rem;
+  border-top: 1px solid var(--border);
+  transition: background 0.3s;
+}
+
+.js-card:hover .js-body {
+  background: #0e0e0e;
+}
+
+.js-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.js-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.9rem;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.js-price-wrap {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.js-price-from {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.48rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.32);
+  margin-bottom: 1px;
+}
+
+.js-price {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.js-price-unit {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.46rem;
+  letter-spacing: 0.14em;
+  color: rgba(244, 241, 236, 0.38);
+}
+
+.js-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.js-chip {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.45);
+  border: 1px solid rgba(244, 241, 236, 0.1);
+  padding: 4px 10px;
+  border-radius: 100px;
+  transition: all 0.25s;
+}
+
+.js-card:hover .js-chip {
+  color: rgba(244, 241, 236, 0.7);
+  border-color: rgba(244, 241, 236, 0.22);
+}
+
+/* Book button */
+.js-book-btn {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(244, 241, 236, 0.2);
+  color: rgba(244, 241, 236, 0.75);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.16, 1, .3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.js-book-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--white);
+  transform: translateY(101%);
+  transition: transform 0.35s cubic-bezier(.16, 1, .3, 1);
+}
+
+.js-book-btn:hover::before { transform: translateY(0); }
+.js-book-btn:hover {
+  color: var(--black);
+  border-color: var(--white);
+}
+
+.js-book-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── SPECS ──────────────────────────────────────────────── */
+.js-specs-section {
+  border: 1px solid var(--border);
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+.js-specs-title {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.57rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.35);
+  margin-bottom: 2rem;
+}
+
+.js-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.js-spec {
+  padding: 1.25rem 2rem 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.js-spec:nth-child(3n) {
+  padding-right: 0;
+}
+
+.js-spec-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.5rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.3);
+  margin-bottom: 5px;
+}
+
+.js-spec-val {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: rgba(244, 241, 236, 0.85);
+}
+
+/* ── PRICING TABLE ──────────────────────────────────────── */
+.js-pricing-section {
+  margin-top: 1px;
+  border: 1px solid var(--border);
+  border-top: none;
+}
+
+.js-pricing-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+}
+
+.js-ptab {
+  flex: 1;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.4);
+  background: none;
+  border: none;
+  border-right: 1px solid var(--border);
+  padding: 1rem;
+  cursor: pointer;
+  transition: color 0.25s;
+  position: relative;
+}
+
+.js-ptab:last-child { border-right: none; }
+
+.js-ptab::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--white);
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(.16, 1, .3, 1);
+}
+
+.js-ptab.on { color: var(--white); }
+.js-ptab.on::after { transform: scaleX(1); }
+
+.js-prows {
+  display: none;
+  padding: 0 2.5rem 2rem;
+}
+
+.js-prows.on { display: block; }
+
+.js-prow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+}
+
+.js-prow:last-child { border-bottom: none; }
+
+.js-prow-days { color: rgba(244, 241, 236, 0.45); }
+
+.js-prow-price {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+}
+
+/* ── FINE PRINT ─────────────────────────────────────────── */
+.js-fine-print {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.js-fp-block {
+  background: var(--black);
+  padding: 2rem;
+}
+
+.js-fp-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.52rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(244, 241, 236, 0.32);
+  margin-bottom: 1rem;
+}
+
+.js-fp-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.js-fp-item {
+  font-size: 0.82rem;
+  color: rgba(244, 241, 236, 0.65);
+  line-height: 1.55;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.js-fp-item::before {
+  content: '—';
+  font-family: 'DM Mono', monospace;
+  font-size: 0.55rem;
+  color: rgba(244, 241, 236, 0.25);
+  flex-shrink: 0;
+}
+
+/* ── BOOKING SECTION ────────────────────────────────────── */
+#jetski-booking {
+  margin-top: 4rem;
+  border: 1px solid rgba(244, 241, 236, 0.14);
+  padding: 2.5rem 2rem;
+  background: var(--black);
+}
+
+.js-booking-title {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  margin-bottom: 2rem;
+}
+
+.bq-datepicker-wrap {
+  margin-bottom: 2rem;
+}
+
+.jet-booking-panel {
+  border-top: 1px solid rgba(244, 241, 236, 0.1);
+  padding-top: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.jet-booking-panel .js-eyebrow {
+  margin-bottom: 1rem;
+}
+
+/* ── BOOQABLE DARK OVERRIDES ────────────────────────────── */
+#jetski-booking [class*="booqable"],
+#jetski-booking [class*="bq-"] {
+  color: var(--white) !important;
+  background: transparent !important;
+  border-color: rgba(244, 241, 236, 0.16) !important;
+}
+
+#jetski-booking input,
+#jetski-booking select,
+#jetski-booking textarea {
+  background: rgba(244, 241, 236, 0.04) !important;
+  color: var(--white) !important;
+  border: 1px solid rgba(244, 241, 236, 0.16) !important;
+  border-radius: 4px !important;
+  min-height: 48px !important;
+  font-family: 'DM Mono', monospace !important;
+  letter-spacing: 0.06em !important;
+  font-size: 0.72rem !important;
+  padding: 0 14px !important;
+}
+
+#jetski-booking button,
+#jetski-booking .bq-btn-primary,
+#jetski-booking [class*="add-to-cart"] {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border: 1px solid var(--white) !important;
+  border-radius: 999px !important;
+  min-height: 48px !important;
+  padding: 0 22px !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: 0.62rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+}
+
+#jetski-booking .bq-datepicker-calendar,
+#jetski-booking .bq-calendar,
+#jetski-booking [class*="calendar"],
+#jetski-booking .flatpickr-calendar {
+  background: #111 !important;
+  color: var(--white) !important;
+  border: 1px solid rgba(244, 241, 236, 0.16) !important;
+  border-radius: 6px !important;
+  z-index: 999999 !important;
+}
+
+#jetski-booking .flatpickr-day,
+#jetski-booking [class*="day"] {
+  color: var(--white) !important;
+}
+
+#jetski-booking .flatpickr-day.selected,
+#jetski-booking .flatpickr-day.startRange,
+#jetski-booking .flatpickr-day.endRange {
+  background: var(--white) !important;
+  color: var(--black) !important;
+  border-color: var(--white) !important;
+}
+
+#jetski-booking .flatpickr-day.disabled,
+#jetski-booking .flatpickr-day.flatpickr-disabled {
+  color: rgba(244, 241, 236, 0.25) !important;
+}
+
+#jetski-booking svg,
+#jetski-booking path {
+  fill: var(--white) !important;
+  stroke: var(--white) !important;
+}
+
+/* allow Booqable calendars/dropdowns to escape overflow */
+#jetski-booking,
+.jet-booking-panel {
+  overflow: visible !important;
+}
+
+/* ── JET SKIS MOBILE ────────────────────────────────────── */
+@media (max-width: 700px) {
+  #nbjs-jetski {
+    padding: 88px 1.25rem 5rem;
+  }
+
+  .js-head {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .js-head-note {
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .js-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .js-specs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .js-fine-print {
+    grid-template-columns: 1fr;
+  }
+
+  .js-pricing-tabs {
+    flex-direction: column;
+  }
+
+  .js-ptab {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  #jetski-booking {
+    padding: 2rem 1.25rem;
+  }
+}
