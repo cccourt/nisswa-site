@@ -1,12 +1,12 @@
 /* =========================================================
-   MAIN.JS — Shared across all pages
+   MAIN.JS â Shared across all pages
    Handles: loader, cursor, header scroll, scroll reveals,
             lake mode, Konami code easter egg trigger
 ========================================================= */
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // ── LOADER ──────────────────────────────────────────────
+  // ââ LOADER ââââââââââââââââââââââââââââââââââââââââââââââ
   const loader = document.getElementById('nbjs-loader');
 
   function hideLoader() {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(hideLoader, 2500);
 
 
-  // ── CUSTOM CURSOR ────────────────────────────────────────
+  // ââ CUSTOM CURSOR ââââââââââââââââââââââââââââââââââââââââ
   const cursor = document.getElementById('cursor');
 
   if (cursor && window.innerWidth > 768) {
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  // ── SMART HEADER ─────────────────────────────────────────
+  // ââ SMART HEADER âââââââââââââââââââââââââââââââââââââââââ
   const hdr = document.getElementById('hdr');
   let lastScrollY = 0;
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { passive: true });
 
 
-  // ── SCROLL REVEALS ───────────────────────────────────────
+  // ââ SCROLL REVEALS âââââââââââââââââââââââââââââââââââââââ
   const revEls = document.querySelectorAll('.rev');
   if (revEls.length > 0) {
     const revObserver = new IntersectionObserver(function (entries) {
@@ -70,13 +70,13 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  // ── LAKE MODE (logo click) ────────────────────────────────
+  // ââ LAKE MODE (logo click) ââââââââââââââââââââââââââââââââ
   const lakeModeTrigger = document.getElementById('lakeModeTrigger');
   const lakeModeToast   = document.getElementById('lakeModeToast');
 
   if (lakeModeTrigger) {
     lakeModeTrigger.addEventListener('click', function (e) {
-      // Only activate lake mode — don't navigate away on home page
+      // Only activate lake mode â don't navigate away on home page
       // (the href="index.html" still navigates on other pages)
       const isHome = document.body.classList.contains('page-home') ||
                      !document.body.className ||
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  // ── KONAMI CODE → GAME.HTML ──────────────────────────────
+  // ââ KONAMI CODE â GAME.HTML ââââââââââââââââââââââââââââââ
   // Up Up Down Down Left Right Left Right B A
   const KONAMI = [
     'ArrowUp','ArrowUp','ArrowDown','ArrowDown',
@@ -120,3 +120,30 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+
+
+// ── MOBILE HAMBURGER ──────────────────────────────────────────
+(function() {
+  function initMobileNav() {
+    const hamburger = document.getElementById('nav-hamburger');
+    const drawer = document.getElementById('mobile-nav-drawer');
+    if (!hamburger || !drawer) return;
+    hamburger.addEventListener('click', function() {
+      const open = drawer.classList.toggle('open');
+      hamburger.classList.toggle('open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    drawer.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        drawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initMobileNav);
+  } else {
+    initMobileNav();
+  }
+})();
