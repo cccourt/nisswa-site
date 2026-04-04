@@ -1,9 +1,9 @@
 /* =========================================================
-   NISSWA BOAT & JET SKI — SHARED STYLES
+   NISSWA BOAT & JET SKI â SHARED STYLES
    Applies to: index.html, fleet.html, jet-skis.html
 ========================================================= */
 
-/* ── RESET ─────────────────────────────────────────────── */
+/* ââ RESET âââââââââââââââââââââââââââââââââââââââââââââââ */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ── ROOT ──────────────────────────────────────────────── */
+/* ââ ROOT ââââââââââââââââââââââââââââââââââââââââââââââââ */
 :root {
   --black:     #080808;
   --white:     #f4f1ec;
@@ -41,7 +41,7 @@ a, button, input {
   font-family: inherit;
 }
 
-/* ── CUSTOM CURSOR ──────────────────────────────────────── */
+/* ââ CUSTOM CURSOR ââââââââââââââââââââââââââââââââââââââââ */
 .cursor {
   position: fixed;
   width: 10px;
@@ -64,7 +64,7 @@ a, button, input {
   .cursor { display: none !important; }
 }
 
-/* ── LOADER ─────────────────────────────────────────────── */
+/* ââ LOADER âââââââââââââââââââââââââââââââââââââââââââââââ */
 .nbjs-loader {
   position: fixed;
   inset: 0;
@@ -119,7 +119,7 @@ a, button, input {
   color: rgba(244, 241, 236, 0.6);
 }
 
-/* ── HEADER ─────────────────────────────────────────────── */
+/* ââ HEADER âââââââââââââââââââââââââââââââââââââââââââââââ */
 #hdr {
   position: fixed;
   top: 0;
@@ -248,7 +248,7 @@ a, button, input {
   transform: translateY(-1px);
 }
 
-/* ── SHARED SECTION UTILITIES ───────────────────────────── */
+/* ââ SHARED SECTION UTILITIES âââââââââââââââââââââââââââââ */
 .s-label {
   font-family: 'DM Mono', monospace;
   font-size: 0.58rem;
@@ -258,7 +258,7 @@ a, button, input {
   margin-bottom: 1rem;
 }
 
-/* ── SCROLL REVEALS ─────────────────────────────────────── */
+/* ââ SCROLL REVEALS âââââââââââââââââââââââââââââââââââââââ */
 .rev {
   opacity: 0;
   transform: translateY(28px);
@@ -272,7 +272,7 @@ a, button, input {
   transform: none;
 }
 
-/* ── ANIMATIONS ─────────────────────────────────────────── */
+/* ââ ANIMATIONS âââââââââââââââââââââââââââââââââââââââââââ */
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
@@ -283,7 +283,7 @@ a, button, input {
   100% { transform: translateX(100%); }
 }
 
-/* ── SHARED FOOTER ──────────────────────────────────────── */
+/* ââ SHARED FOOTER ââââââââââââââââââââââââââââââââââââââââ */
 .site-footer,
 .nbjs-wrap footer {
   padding: 3.5rem 3rem;
@@ -323,7 +323,7 @@ a, button, input {
   color: rgba(244, 241, 236, 0.25);
 }
 
-/* ── LAKE MODE TOAST ────────────────────────────────────── */
+/* ââ LAKE MODE TOAST ââââââââââââââââââââââââââââââââââââââ */
 .lake-mode-toast {
   position: fixed;
   right: 24px;
@@ -373,7 +373,7 @@ a, button, input {
   transform: translateY(0) scale(1);
 }
 
-/* ── MOBILE HEADER ──────────────────────────────────────── */
+/* ââ MOBILE HEADER ââââââââââââââââââââââââââââââââââââââââ */
 @media (max-width: 768px) {
   #hdr {
     padding: 0 1.5rem;
@@ -402,4 +402,81 @@ a, button, input {
     bottom: 14px;
     font-size: 9px;
   }
+}
+
+
+/* ── MOBILE NAV HAMBURGER ─────────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 200;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--white);
+  transition: transform 0.3s cubic-bezier(.16,1,.3,1), opacity 0.2s;
+  transform-origin: center;
+}
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Mobile nav drawer */
+.mobile-nav-drawer {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(6, 12, 20, 0.97);
+  z-index: 190;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  backdrop-filter: blur(8px);
+}
+.mobile-nav-drawer.open {
+  display: flex;
+}
+.mobile-nav-drawer a {
+  font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.12em;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+.mobile-nav-drawer a:hover { opacity: 1; }
+.mobile-nav-drawer .mobile-book-btn {
+  margin-top: 1rem;
+  padding: 0.8rem 2.2rem;
+  border: 1.5px solid var(--white);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: var(--white);
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s, color 0.2s;
+}
+.mobile-nav-drawer .mobile-book-btn:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+@media (max-width: 768px) {
+  .nav-hamburger { display: flex; }
+  .header-right .book-btn { display: none; }
 }
