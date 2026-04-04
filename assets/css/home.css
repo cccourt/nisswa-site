@@ -1,8 +1,8 @@
 /* =========================================================
-   HOME PAGE STYLES â index.html
+   HOME PAGE STYLES Ã¢ÂÂ index.html
 ========================================================= */
 
-/* ââ WRAP âââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ WRAP Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 .nbjs-wrap {
   position: relative;
   background: var(--black);
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-/* ââ HERO âââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ HERO Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -24,8 +24,8 @@
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background:
-    radial-gradient(circle at 80% 15%, rgba(143, 183, 201, 0.09), transparent 30%),
-    radial-gradient(circle at 20% 80%, rgba(143, 183, 201, 0.06), transparent 35%),
+    radial-gradient(circle at 80% 15%, rgba(30, 64, 128, 0.06), transparent 30%),
+    radial-gradient(circle at 20% 80%, rgba(30, 64, 128, 0.04), transparent 35%),
     var(--black);
 }
 
@@ -45,7 +45,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.62);
+  color: rgba(13, 30, 53, 0.72);
   line-height: 2;
 }
 
@@ -54,14 +54,14 @@
   font-size: 0.58rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.62);
-  border: 1px solid rgba(244, 241, 236, 0.28);
+  color: rgba(13, 30, 53, 0.72);
+  border: 1px solid rgba(13, 30, 53, 0.38);
   padding: 6px 14px;
   border-radius: 999px;
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(30, 64, 128, 0.04);
   backdrop-filter: blur(10px);
 }
 
@@ -92,7 +92,7 @@
 .hero-h1 .dim {
   font-family: 'Instrument Serif', serif;
   font-style: italic;
-  color: rgba(244, 241, 236, 0.55);
+  color: rgba(13, 30, 53, 0.65);
 }
 
 .hero-bottom {
@@ -104,7 +104,7 @@
 
 .hero-sub {
   font-size: 1rem;
-  color: rgba(244, 241, 236, 0.68);
+  color: rgba(13, 30, 53, 0.75);
   line-height: 1.75;
   max-width: 380px;
 }
@@ -117,13 +117,13 @@
   font-size: 0.58rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.5);
+  color: rgba(13, 30, 53, 0.60);
 }
 
 .sweep-line {
   width: 50px;
   height: 1px;
-  background: rgba(244, 241, 236, 0.2);
+  background: rgba(13, 30, 53, 0.28);
   position: relative;
   overflow: hidden;
 }
@@ -136,7 +136,7 @@
   animation: sweep 2s ease infinite;
 }
 
-/* ââ LAKE CHECKER âââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ LAKE CHECKER Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 #checker {
   padding: 7rem 3rem;
 }
@@ -158,13 +158,13 @@
 .checker-title em {
   font-family: 'Instrument Serif', serif;
   font-style: italic;
-  color: rgba(244, 241, 236, 0.5);
+  color: rgba(13, 30, 53, 0.60);
 }
 
 .checker-desc {
   max-width: 240px;
   font-size: 0.85rem;
-  color: rgba(244, 241, 236, 0.6);
+  color: rgba(13, 30, 53, 0.70);
   line-height: 1.75;
   text-align: right;
 }
@@ -178,7 +178,7 @@
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(244, 241, 236, 0.25);
+  border-bottom: 1px solid rgba(13, 30, 53, 0.32);
   color: var(--white);
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(2.5rem, 6vw, 5.5rem);
@@ -192,11 +192,11 @@
 }
 
 .lake-input::placeholder {
-  color: rgba(244, 241, 236, 0.15);
+  color: rgba(13, 30, 53, 0.20);
 }
 
 .lake-input:focus {
-  border-color: rgba(244, 241, 236, 0.55);
+  border-color: rgba(13, 30, 53, 0.65);
 }
 
 .search-btn {
@@ -221,14 +221,14 @@
   background: var(--off-white);
 }
 
-/* ââ LAKE AUTOCOMPLETE ââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ LAKE AUTOCOMPLETE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 .lake-suggestions {
   position: absolute;
   left: 0;
   right: 0;
   top: calc(100% + 12px);
-  background: rgba(12, 12, 12, 0.96);
-  border: 1px solid rgba(244, 241, 236, 0.12);
+  background: rgba(13, 30, 53, 0.97);
+  border: 1px solid rgba(13, 30, 53, 0.14);
   border-radius: 18px;
   padding: 0.5rem;
   backdrop-filter: blur(18px);
@@ -266,7 +266,7 @@
 }
 
 .lake-suggestion-item:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(30, 64, 128, 0.05);
   transform: translateX(2px);
 }
 
@@ -275,11 +275,11 @@
   font-size: 0.58rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.5);
+  color: rgba(13, 30, 53, 0.60);
   white-space: nowrap;
 }
 
-/* ââ PILLS ââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ PILLS Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 .pills {
   display: flex;
   flex-wrap: wrap;
@@ -292,8 +292,8 @@
   font-size: 0.6rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.65);
-  border: 1px solid rgba(244, 241, 236, 0.22);
+  color: rgba(13, 30, 53, 0.72);
+  border: 1px solid rgba(13, 30, 53, 0.30);
   padding: 7px 16px;
   border-radius: 999px;
   cursor: pointer;
@@ -308,7 +308,7 @@
   border-color: var(--white);
 }
 
-/* ââ RESULTS ââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ RESULTS Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 #results {
   display: none;
 }
@@ -347,7 +347,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.65);
+  color: rgba(13, 30, 53, 0.72);
 }
 
 /* Access cards grid */
@@ -366,7 +366,7 @@
   transition: background 0.25s;
 }
 
-.ac:hover { background: #111; }
+.ac:hover { background: #f8fafb; }
 
 .ac.sel {
   background: var(--white);
@@ -406,8 +406,8 @@
 }
 
 .badge.h {
-  background: rgba(244, 241, 236, 0.08);
-  color: rgba(244, 241, 236, 0.6);
+  background: rgba(13, 30, 53, 0.08);
+  color: rgba(13, 30, 53, 0.70);
 }
 
 .ac.sel .badge.free {
@@ -416,8 +416,8 @@
 }
 
 .ac.sel .badge.h {
-  background: rgba(8, 8, 8, 0.08);
-  color: rgba(8, 8, 8, 0.5);
+  background: rgba(13, 30, 53, 0.04);
+  color: rgba(13, 30, 53, 0.25);
 }
 
 .ac-btns {
@@ -433,9 +433,9 @@
   text-transform: uppercase;
   padding: 9px 10px;
   border-radius: 6px;
-  border: 1px solid rgba(244, 241, 236, 0.28);
+  border: 1px solid rgba(13, 30, 53, 0.38);
   background: transparent;
-  color: rgba(244, 241, 236, 0.8);
+  color: rgba(13, 30, 53, 0.86);
   cursor: pointer;
   transition: all 0.25s;
   text-align: center;
@@ -446,9 +446,9 @@
 }
 
 .ac-btn:hover {
-  background: rgba(244, 241, 236, 0.1);
+  background: rgba(13, 30, 53, 0.12);
   color: var(--white);
-  border-color: rgba(244, 241, 236, 0.5);
+  border-color: rgba(13, 30, 53, 0.60);
 }
 
 .ac-btn.pri {
@@ -462,12 +462,12 @@
 }
 
 .ac.sel .ac-btn {
-  border-color: rgba(8, 8, 8, 0.18);
-  color: rgba(8, 8, 8, 0.65);
+  border-color: rgba(13, 30, 53, 0.06);
+  color: rgba(13, 30, 53, 0.10);
 }
 
 .ac.sel .ac-btn:hover {
-  background: rgba(8, 8, 8, 0.07);
+  background: rgba(13, 30, 53, 0.03);
   color: var(--black);
 }
 
@@ -514,7 +514,7 @@
   font-size: 0.58rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.35);
+  color: rgba(13, 30, 53, 0.46);
 }
 
 .map-close {
@@ -522,7 +522,7 @@
   font-size: 0.58rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.5);
+  color: rgba(13, 30, 53, 0.60);
   background: none;
   border: none;
   cursor: pointer;
@@ -531,7 +531,7 @@
 
 .map-close:hover { color: var(--white); }
 
-/* ââ FLEET PREVIEW (homepage inline) âââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ FLEET PREVIEW (homepage inline) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 #fleet {
   padding: 7rem 3rem;
   display: none;
@@ -561,13 +561,13 @@
   font-size: 0.62rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.5);
+  color: rgba(13, 30, 53, 0.60);
   text-align: right;
   line-height: 2;
 }
 
 .fleet-ctx strong {
-  color: rgba(244, 241, 236, 0.85);
+  color: rgba(13, 30, 53, 0.88);
   display: block;
 }
 
@@ -586,7 +586,7 @@
   transition: background 0.3s;
 }
 
-.fc:hover { background: #0f0f0f; }
+.fc:hover { background: #f0f5ff; }
 
 .fc.feat {
   background: var(--white);
@@ -597,7 +597,7 @@
   font-family: 'DM Mono', monospace;
   font-size: 0.55rem;
   letter-spacing: 0.2em;
-  color: rgba(244, 241, 236, 0.25);
+  color: rgba(13, 30, 53, 0.32);
   margin-bottom: 3rem;
 }
 
@@ -618,7 +618,7 @@
 
 .fc-tag {
   font-size: 0.8rem;
-  color: rgba(244, 241, 236, 0.55);
+  color: rgba(13, 30, 53, 0.65);
   line-height: 1.65;
   margin-bottom: 2rem;
 }
@@ -638,25 +638,25 @@
   font-family: 'DM Mono', monospace;
   font-size: 0.58rem;
   letter-spacing: 0.1em;
-  color: rgba(244, 241, 236, 0.5);
+  color: rgba(13, 30, 53, 0.60);
   padding-bottom: 8px;
-  border-bottom: 1px solid rgba(244, 241, 236, 0.08);
+  border-bottom: 1px solid rgba(13, 30, 53, 0.08);
   gap: 1rem;
 }
 
 .fc.feat .spec {
   color: rgba(8, 8, 8, 0.35);
-  border-color: rgba(8, 8, 8, 0.08);
+  border-color: rgba(13, 30, 53, 0.04);
 }
 
-.sv { color: rgba(244, 241, 236, 0.85); }
+.sv { color: rgba(13, 30, 53, 0.88); }
 .fc.feat .sv { color: rgba(8, 8, 8, 0.75); }
 
 .fc-btn {
   width: 100%;
   background: transparent;
-  border: 1px solid rgba(244, 241, 236, 0.28);
-  color: rgba(244, 241, 236, 0.8);
+  border: 1px solid rgba(13, 30, 53, 0.38);
+  color: rgba(13, 30, 53, 0.86);
   font-family: 'DM Mono', monospace;
   font-size: 0.62rem;
   letter-spacing: 0.2em;
@@ -682,9 +682,9 @@
   border-color: var(--black);
 }
 
-.fc.feat .fc-btn:hover { background: #1a1a1a; }
+.fc.feat .fc-btn:hover { background: #eef3fb; }
 
-/* ââ HOW IT WORKS âââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ HOW IT WORKS Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 #how {
   padding: 7rem 3rem;
 }
@@ -706,7 +706,7 @@
 .how-title em {
   font-family: 'Instrument Serif', serif;
   font-style: italic;
-  color: rgba(244, 241, 236, 0.45);
+  color: rgba(13, 30, 53, 0.55);
 }
 
 .steps {
@@ -728,7 +728,7 @@
   font-family: 'DM Mono', monospace;
   font-size: 0.6rem;
   letter-spacing: 0.15em;
-  color: rgba(244, 241, 236, 0.3);
+  color: rgba(13, 30, 53, 0.42);
   padding-top: 4px;
 }
 
@@ -741,7 +741,7 @@
 
 .step-desc {
   font-size: 0.85rem;
-  color: rgba(244, 241, 236, 0.6);
+  color: rgba(13, 30, 53, 0.70);
   line-height: 1.75;
 }
 
@@ -764,7 +764,7 @@
   display: flex;
   align-items: stretch;
   justify-content: stretch;
-  background: #0d0d0d;
+  background: #f8fafb;
 }
 
 .how-box-vis video {
@@ -780,7 +780,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(8, 10, 12, 0.28);
+  background: rgba(13, 30, 53, 0.10);
   pointer-events: none;
   z-index: 2;
 }
@@ -796,7 +796,7 @@
   font-size: 0.55rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.3);
+  color: rgba(13, 30, 53, 0.42);
   margin-bottom: 8px;
 }
 
@@ -804,10 +804,10 @@
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.3rem;
   letter-spacing: 0.08em;
-  color: rgba(244, 241, 236, 0.7);
+  color: rgba(13, 30, 53, 0.78);
 }
 
-/* ââ LAKE MODE ââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ LAKE MODE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 body.lake-mode-on .hero,
 body.lake-mode-on #checker,
 body.lake-mode-on #fleet,
@@ -816,7 +816,7 @@ body.lake-mode-on footer {
   background:
     radial-gradient(circle at 80% 20%, rgba(122, 177, 188, 0.10), transparent 28%),
     radial-gradient(circle at 20% 80%, rgba(143, 215, 223, 0.06), transparent 30%),
-    linear-gradient(180deg, #0a0f12 0%, #0d1317 100%) !important;
+    linear-gradient(180deg, #f5f8fb 0%, #eef3fb 100%) !important;
 }
 
 body.lake-mode-on .hero-h1,
@@ -829,7 +829,7 @@ body.lake-mode-on .result-lake {
     0 0 38px rgba(99, 157, 184, 0.06);
 }
 
-/* ââ HOME MOBILE ââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂ HOME MOBILE Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 @media (max-width: 768px) {
   .hero {
     padding: 140px 1.5rem 4rem;
@@ -923,7 +923,7 @@ body.lake-mode-on .result-lake {
 }
 
 
-/* ── VIDEO FALLBACK (when video src unavailable) ─────────────── */
+/* ââ VIDEO FALLBACK (when video src unavailable) âââââââââââââââ */
 .how-box-vis video {
   width: 100%;
   height: 100%;
@@ -943,4 +943,59 @@ body.lake-mode-on .result-lake {
 video:not([src]) ~ .video-fallback,
 video:empty .video-fallback {
   display: block;
+}
+
+
+/* ================================================================
+   HERO — white text over dark video; dark-navy fallback bg
+   ================================================================ */
+.hero {
+  background: #0d1e35;
+}
+.hero *,
+.hero-h1,
+.hero-content,
+.hero-meta,
+.hero-bottom {
+  color: #f4f1ec !important;
+}
+.hero-eyebrow,
+.hero-sub,
+.hero-scroll,
+.hero-h1 .dim {
+  color: rgba(244, 241, 236, 0.72) !important;
+}
+.hero .sweep-line {
+  background: rgba(244, 241, 236, 0.18) !important;
+}
+.hero-tag {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Lake access cards — light on white section */
+.ac:hover {
+  background: #e8f1fb !important;
+}
+.ac.sel {
+  background: #dce8f8 !important;
+}
+.ac-btn {
+  color: #0d1e35 !important;
+  border-color: rgba(13, 30, 53, 0.25) !important;
+}
+.ac-btn:hover {
+  background: rgba(13, 30, 53, 0.06) !important;
+}
+
+/* How-it-works visual panel — keep as rich photo/icon containers */
+.how-box-vis {
+  background: #0d1e35 !important;
+}
+
+/* Video fallback div */
+.video-fallback {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, #0d1e35 0%, #1e3a5f 100%);
+  z-index: 0;
 }
