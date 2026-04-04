@@ -1,5 +1,5 @@
 /* =========================================================
-   JET SKIS PAGE — jet-skis.html
+   JET SKIS PAGE â jet-skis.html
 ========================================================= */
 
 body.page-jetskis {
@@ -7,7 +7,7 @@ body.page-jetskis {
 }
 
 #nbjs-jetski {
-  --border: rgba(244, 241, 236, 0.14);
+  --border: rgba(13, 30, 53, 0.18);
   background: var(--black);
   color: var(--white);
   padding: 100px 3rem 7rem;
@@ -22,8 +22,8 @@ body.page-jetskis {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(244, 241, 236, 0.016) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244, 241, 236, 0.016) 1px, transparent 1px);
+    linear-gradient(rgba(13, 30, 53, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 30, 53, 0.015) 1px, transparent 1px);
   background-size: 32px 32px;
   opacity: 0.25;
   pointer-events: none;
@@ -35,7 +35,7 @@ body.page-jetskis {
   z-index: 1;
 }
 
-/* ── SECTION HEADER ─────────────────────────────────────── */
+/* ââ SECTION HEADER âââââââââââââââââââââââââââââââââââââââ */
 .js-head {
   display: flex;
   align-items: flex-end;
@@ -51,7 +51,7 @@ body.page-jetskis {
   font-size: 0.57rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.45);
+  color: rgba(13, 30, 53, 0.55);
   margin-bottom: 0.75rem;
 }
 
@@ -65,7 +65,7 @@ body.page-jetskis {
 .js-title em {
   font-family: 'Instrument Serif', serif;
   font-style: italic;
-  color: rgba(244, 241, 236, 0.38);
+  color: rgba(13, 30, 53, 0.48);
 }
 
 .js-head-note {
@@ -73,13 +73,13 @@ body.page-jetskis {
   font-size: 0.58rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.35);
+  color: rgba(13, 30, 53, 0.46);
   text-align: right;
   line-height: 2;
   max-width: 200px;
 }
 
-/* ── PRODUCT GRID ───────────────────────────────────────── */
+/* ââ PRODUCT GRID âââââââââââââââââââââââââââââââââââââââââ */
 .js-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -89,7 +89,7 @@ body.page-jetskis {
   margin-bottom: 4rem;
 }
 
-/* ── PRODUCT CARD ───────────────────────────────────────── */
+/* ââ PRODUCT CARD âââââââââââââââââââââââââââââââââââââââââ */
 .js-card {
   background: var(--black);
   overflow: hidden;
@@ -102,7 +102,7 @@ body.page-jetskis {
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: #0c0c0c;
+  background: #ffffff;
 }
 
 .js-visual svg {
@@ -125,8 +125,8 @@ body.page-jetskis {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(244, 241, 236, 0.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244, 241, 236, 0.022) 1px, transparent 1px);
+    linear-gradient(rgba(13, 30, 53, 0.020) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 30, 53, 0.020) 1px, transparent 1px);
   background-size: 28px 28px;
   z-index: 2;
   pointer-events: none;
@@ -141,18 +141,18 @@ body.page-jetskis {
   font-size: 0.5rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.55);
-  border: 1px solid rgba(244, 241, 236, 0.14);
+  color: rgba(13, 30, 53, 0.65);
+  border: 1px solid rgba(13, 30, 53, 0.18);
   padding: 4px 10px;
   border-radius: 100px;
-  background: rgba(8, 8, 8, 0.65);
+  background: rgba(13, 30, 53, 0.10);
   backdrop-filter: blur(8px);
   transition: all 0.3s;
 }
 
 .js-card:hover .js-tag {
   color: var(--white);
-  border-color: rgba(244, 241, 236, 0.35);
+  border-color: rgba(13, 30, 53, 0.46);
 }
 
 /* Card body */
@@ -163,7 +163,7 @@ body.page-jetskis {
 }
 
 .js-card:hover .js-body {
-  background: #0e0e0e;
+  background: #f8fafb;
 }
 
 .js-card-top {
@@ -191,7 +191,7 @@ body.page-jetskis {
   font-size: 0.48rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.32);
+  color: rgba(13, 30, 53, 0.44);
   margin-bottom: 1px;
 }
 
@@ -205,7 +205,7 @@ body.page-jetskis {
   font-family: 'DM Mono', monospace;
   font-size: 0.46rem;
   letter-spacing: 0.14em;
-  color: rgba(244, 241, 236, 0.38);
+  color: rgba(13, 30, 53, 0.48);
 }
 
 .js-chips {
@@ -220,24 +220,24 @@ body.page-jetskis {
   font-size: 0.5rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.45);
-  border: 1px solid rgba(244, 241, 236, 0.1);
+  color: rgba(13, 30, 53, 0.55);
+  border: 1px solid rgba(13, 30, 53, 0.12);
   padding: 4px 10px;
   border-radius: 100px;
   transition: all 0.25s;
 }
 
 .js-card:hover .js-chip {
-  color: rgba(244, 241, 236, 0.7);
-  border-color: rgba(244, 241, 236, 0.22);
+  color: rgba(13, 30, 53, 0.78);
+  border-color: rgba(13, 30, 53, 0.30);
 }
 
 /* Book button */
 .js-book-btn {
   width: 100%;
   background: transparent;
-  border: 1px solid rgba(244, 241, 236, 0.2);
-  color: rgba(244, 241, 236, 0.75);
+  border: 1px solid rgba(13, 30, 53, 0.28);
+  color: rgba(13, 30, 53, 0.82);
   font-family: 'DM Mono', monospace;
   font-size: 0.62rem;
   letter-spacing: 0.22em;
@@ -270,7 +270,7 @@ body.page-jetskis {
   z-index: 1;
 }
 
-/* ── SPECS ──────────────────────────────────────────────── */
+/* ââ SPECS ââââââââââââââââââââââââââââââââââââââââââââââââ */
 .js-specs-section {
   border: 1px solid var(--border);
   padding: 2.5rem 2.5rem 2rem;
@@ -281,7 +281,7 @@ body.page-jetskis {
   font-size: 0.57rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.35);
+  color: rgba(13, 30, 53, 0.46);
   margin-bottom: 2rem;
 }
 
@@ -304,7 +304,7 @@ body.page-jetskis {
   font-size: 0.5rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.3);
+  color: rgba(13, 30, 53, 0.42);
   margin-bottom: 5px;
 }
 
@@ -312,10 +312,10 @@ body.page-jetskis {
   font-family: 'Syne', sans-serif;
   font-size: 0.88rem;
   font-weight: 600;
-  color: rgba(244, 241, 236, 0.85);
+  color: rgba(13, 30, 53, 0.88);
 }
 
-/* ── PRICING TABLE ──────────────────────────────────────── */
+/* ââ PRICING TABLE ââââââââââââââââââââââââââââââââââââââââ */
 .js-pricing-section {
   margin-top: 1px;
   border: 1px solid var(--border);
@@ -380,7 +380,7 @@ body.page-jetskis {
 
 .js-prow:last-child { border-bottom: none; }
 
-.js-prow-days { color: rgba(244, 241, 236, 0.45); }
+.js-prow-days { color: rgba(13, 30, 53, 0.55); }
 
 .js-prow-price {
   font-family: 'Bebas Neue', sans-serif;
@@ -388,7 +388,7 @@ body.page-jetskis {
   letter-spacing: 0.06em;
 }
 
-/* ── FINE PRINT ─────────────────────────────────────────── */
+/* ââ FINE PRINT âââââââââââââââââââââââââââââââââââââââââââ */
 .js-fine-print {
   margin-top: 3rem;
   display: grid;
@@ -408,7 +408,7 @@ body.page-jetskis {
   font-size: 0.52rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.32);
+  color: rgba(13, 30, 53, 0.44);
   margin-bottom: 1rem;
 }
 
@@ -420,7 +420,7 @@ body.page-jetskis {
 
 .js-fp-item {
   font-size: 0.82rem;
-  color: rgba(244, 241, 236, 0.65);
+  color: rgba(13, 30, 53, 0.72);
   line-height: 1.55;
   display: flex;
   gap: 0.6rem;
@@ -428,17 +428,17 @@ body.page-jetskis {
 }
 
 .js-fp-item::before {
-  content: '—';
+  content: 'â';
   font-family: 'DM Mono', monospace;
   font-size: 0.55rem;
-  color: rgba(244, 241, 236, 0.25);
+  color: rgba(13, 30, 53, 0.32);
   flex-shrink: 0;
 }
 
-/* ── BOOKING SECTION ────────────────────────────────────── */
+/* ââ BOOKING SECTION ââââââââââââââââââââââââââââââââââââââ */
 #jetski-booking {
   margin-top: 4rem;
-  border: 1px solid rgba(244, 241, 236, 0.14);
+  border: 1px solid rgba(13, 30, 53, 0.18);
   padding: 2.5rem 2rem;
   background: var(--black);
 }
@@ -453,7 +453,7 @@ body.page-jetskis {
 }
 
 .jet-booking-panel {
-  border-top: 1px solid rgba(244, 241, 236, 0.1);
+  border-top: 1px solid rgba(13, 30, 53, 0.12);
   padding-top: 1.5rem;
   margin-top: 0.5rem;
 }
@@ -462,7 +462,7 @@ body.page-jetskis {
   margin-bottom: 1rem;
 }
 
-/* ── BOOQABLE DARK OVERRIDES ────────────────────────────── */
+/* ââ BOOQABLE DARK OVERRIDES ââââââââââââââââââââââââââââââ */
 #jetski-booking [class*="booqable"],
 #jetski-booking [class*="bq-"] {
   color: var(--white) !important;
@@ -506,7 +506,7 @@ body.page-jetskis {
 #jetski-booking .bq-calendar,
 #jetski-booking [class*="calendar"],
 #jetski-booking .flatpickr-calendar {
-  background: #111 !important;
+  background: #f8fafb !important;
   color: var(--white) !important;
   border: 1px solid rgba(244, 241, 236, 0.16) !important;
   border-radius: 6px !important;
@@ -528,7 +528,7 @@ body.page-jetskis {
 
 #jetski-booking .flatpickr-day.disabled,
 #jetski-booking .flatpickr-day.flatpickr-disabled {
-  color: rgba(244, 241, 236, 0.25) !important;
+  color: rgba(13, 30, 53, 0.32) !important;
 }
 
 #jetski-booking svg,
@@ -543,7 +543,7 @@ body.page-jetskis {
   overflow: visible !important;
 }
 
-/* ── JET SKIS MOBILE ────────────────────────────────────── */
+/* ââ JET SKIS MOBILE ââââââââââââââââââââââââââââââââââââââ */
 @media (max-width: 700px) {
   #nbjs-jetski {
     padding: 88px 1.25rem 5rem;
