@@ -1,12 +1,12 @@
 /* =========================================================
-   FLEET LANDING PAGE — fleet.html
+   FLEET LANDING PAGE â fleet.html
 ========================================================= */
 
 body.page-fleet {
   background: var(--black);
 }
 
-/* ── PAGE WRAPPER ───────────────────────────────────────── */
+/* ââ PAGE WRAPPER âââââââââââââââââââââââââââââââââââââââââ */
 #nbjs-fleet-page {
   position: relative;
   overflow: hidden;
@@ -14,7 +14,7 @@ body.page-fleet {
   padding: 110px 28px 80px;
   background:
     radial-gradient(circle at 20% 20%, rgba(60, 90, 140, 0.08), transparent 35%),
-    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.03), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(30, 64, 128, 0.04), transparent 30%),
     radial-gradient(circle at 60% 80%, rgba(30, 60, 100, 0.06), transparent 35%),
     var(--black);
 }
@@ -24,7 +24,7 @@ body.page-fleet {
   content: "";
   position: absolute;
   inset: -20%;
-  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.015) 50%, transparent 100%);
+  background: linear-gradient(90deg, transparent 0%, rgba(30, 64, 128, 0.03) 50%, transparent 100%);
   transform: translateX(-18%);
   animation: fleetDrift 16s linear infinite;
   pointer-events: none;
@@ -37,8 +37,8 @@ body.page-fleet {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(244, 241, 236, 0.016) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244, 241, 236, 0.016) 1px, transparent 1px);
+    linear-gradient(rgba(13, 30, 53, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 30, 53, 0.015) 1px, transparent 1px);
   background-size: 32px 32px;
   opacity: 0.28;
   pointer-events: none;
@@ -57,7 +57,7 @@ body.page-fleet {
   z-index: 1;
 }
 
-/* ── SHELL ──────────────────────────────────────────────── */
+/* ââ SHELL ââââââââââââââââââââââââââââââââââââââââââââââââ */
 .fleet-shell {
   max-width: 1240px;
   margin: 0 auto;
@@ -65,7 +65,7 @@ body.page-fleet {
   z-index: 2;
 }
 
-/* ── HERO ───────────────────────────────────────────────── */
+/* ââ HERO âââââââââââââââââââââââââââââââââââââââââââââââââ */
 .fleet-hero {
   display: flex;
   justify-content: space-between;
@@ -84,7 +84,7 @@ body.page-fleet {
   font-size: 0.58rem;
   letter-spacing: 0.24em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.42);
+  color: rgba(13, 30, 53, 0.52);
   margin-bottom: 18px;
 }
 
@@ -103,7 +103,7 @@ body.page-fleet {
   font-style: italic;
   font-weight: 400;
   text-transform: none;
-  color: rgba(244, 241, 236, 0.28);
+  color: rgba(13, 30, 53, 0.38);
   letter-spacing: 0;
 }
 
@@ -117,7 +117,7 @@ body.page-fleet {
   font-size: 0.58rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.42);
+  color: rgba(13, 30, 53, 0.52);
   margin-bottom: 14px;
 }
 
@@ -125,11 +125,11 @@ body.page-fleet {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 4rem;
   line-height: 1;
-  color: rgba(244, 241, 236, 0.18);
+  color: rgba(13, 30, 53, 0.14);
   letter-spacing: 0.08em;
 }
 
-/* ── FILTER TABS ────────────────────────────────────────── */
+/* ââ FILTER TABS ââââââââââââââââââââââââââââââââââââââââââ */
 .fleet-tabs {
   display: flex;
   overflow-x: auto;
@@ -142,7 +142,7 @@ body.page-fleet {
   appearance: none;
   background: none;
   border: none;
-  color: rgba(244, 241, 236, 0.35);
+  color: rgba(13, 30, 53, 0.46);
   font-family: 'DM Mono', monospace;
   font-size: 0.62rem;
   letter-spacing: 0.2em;
@@ -174,7 +174,7 @@ body.page-fleet {
   transform: scaleX(1);
 }
 
-/* ── FLEET GRID ─────────────────────────────────────────── */
+/* ââ FLEET GRID âââââââââââââââââââââââââââââââââââââââââââ */
 .fleet-grid {
   margin-top: 28px;
   display: grid;
@@ -184,7 +184,7 @@ body.page-fleet {
   border: 1px solid var(--border);
 }
 
-/* ── FLEET CARD ─────────────────────────────────────────── */
+/* ââ FLEET CARD âââââââââââââââââââââââââââââââââââââââââââ */
 .fleet-card {
   display: block;
   text-decoration: none;
@@ -198,13 +198,13 @@ body.page-fleet {
   display: none;
 }
 
-/* B&W → color SVG transition */
+/* B&W â color SVG transition */
 .fleet-card-visual {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: #0b0b0b;
+  background: #ffffff;
 }
 
 .fleet-card-visual svg {
@@ -227,8 +227,8 @@ body.page-fleet {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(244, 241, 236, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(244, 241, 236, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(13, 30, 53, 0.020) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 30, 53, 0.020) 1px, transparent 1px);
   background-size: 28px 28px;
   z-index: 2;
   pointer-events: none;
@@ -239,11 +239,11 @@ body.page-fleet {
   top: 18px;
   left: 18px;
   z-index: 3;
-  border: 1px solid rgba(244, 241, 236, 0.14);
+  border: 1px solid rgba(13, 30, 53, 0.18);
   border-radius: 999px;
   padding: 6px 12px;
   background: rgba(8, 8, 8, 0.6);
-  color: rgba(244, 241, 236, 0.58);
+  color: rgba(13, 30, 53, 0.68);
   font-family: 'DM Mono', monospace;
   font-size: 0.52rem;
   letter-spacing: 0.18em;
@@ -255,10 +255,10 @@ body.page-fleet {
 
 .fleet-card:hover .fleet-tag {
   color: var(--white);
-  border-color: rgba(244, 241, 236, 0.35);
+  border-color: rgba(13, 30, 53, 0.46);
 }
 
-/* ── CARD BODY ──────────────────────────────────────────── */
+/* ââ CARD BODY ââââââââââââââââââââââââââââââââââââââââââââ */
 .fleet-card-body {
   padding: 22px 22px 24px;
   border-top: 1px solid var(--border);
@@ -266,7 +266,7 @@ body.page-fleet {
 }
 
 .fleet-card:hover .fleet-card-body {
-  background: #0d0d0d;
+  background: #f8fafb;
 }
 
 .fleet-card-top {
@@ -295,7 +295,7 @@ body.page-fleet {
   font-size: 0.5rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.42);
+  color: rgba(13, 30, 53, 0.52);
   margin-bottom: 4px;
 }
 
@@ -310,12 +310,12 @@ body.page-fleet {
   font-size: 0.5rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(244, 241, 236, 0.42);
+  color: rgba(13, 30, 53, 0.52);
   margin-top: 2px;
 }
 
 .fleet-card-copy {
-  color: rgba(244, 241, 236, 0.62);
+  color: rgba(13, 30, 53, 0.72);
   font-size: 0.95rem;
   line-height: 1.65;
   margin-bottom: 16px;
@@ -329,10 +329,10 @@ body.page-fleet {
 }
 
 .fleet-chip {
-  border: 1px solid rgba(244, 241, 236, 0.1);
+  border: 1px solid rgba(13, 30, 53, 0.12);
   border-radius: 999px;
   padding: 5px 10px;
-  color: rgba(244, 241, 236, 0.46);
+  color: rgba(13, 30, 53, 0.56);
   font-family: 'DM Mono', monospace;
   font-size: 0.5rem;
   letter-spacing: 0.14em;
@@ -350,7 +350,7 @@ body.page-fleet {
   text-transform: uppercase;
 }
 
-/* ── FLEET MOBILE ───────────────────────────────────────── */
+/* ââ FLEET MOBILE âââââââââââââââââââââââââââââââââââââââââ */
 @media (max-width: 900px) {
   #nbjs-fleet-page {
     padding: 96px 16px 56px;
